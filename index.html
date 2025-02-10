@@ -1,15 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>--- EELEETEE ---</title>
 	<style>
 		body {
 			background-color: black;
 		}
-		@font-face {
-    		font-family: 'Frontier';
-    		src: url('Frontier.ttf');
-		}
 	</style>
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q06312F6HZ"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-Q06312F6HZ');
+	</script>
 	<script type="module" src="app.js"></script>
 	<script>
 		function run(canvas) {
@@ -19,10 +27,7 @@
 		}
 	</script>
 </head>
-</script>
 <body onload="run(document.getElementById('canvas'))">
-<div style="font-family: Frontier;">
 	<canvas id="canvas" width="900" height="900" style="border:1px solid #c3c3c3;">Your browser does not support the HTML5 canvas tag.</canvas>
-</div>
 </body>
 </html>
